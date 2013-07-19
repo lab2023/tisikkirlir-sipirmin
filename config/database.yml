@@ -1,0 +1,13 @@
+development: &default
+  adapter: postgresql
+  database: tisikkirlir-sipirmin_development
+  encoding: utf8
+  min_messages: warning
+  pool: 5
+  timeout: 5000
+  host: localhost
+  port: 5432
+
+test:
+  <<: *default
+  database: tisikkirlir-sipirmin_test
